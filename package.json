@@ -4,12 +4,14 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon main.js -e js,njk"
   },
   "keywords": [],
   "author": "Hanna-Liisa Kaarmann https://github.com/h4nn4lk",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2",
+    "nunjucks": "^3.2.4"
   }
 }

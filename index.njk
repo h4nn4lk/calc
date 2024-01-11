@@ -6,10 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li><a href="/">Home</a></li>
-    </ul>
-    {% block content %}
-    {% endblock %}
+<h1> a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></h1>
+        <form action="/calculator" method="post">
+             <label for="fname">A:</label><br>
+            <input type="number" id="fname" name="sideA"><br>
+            <label for="lname">B:</label><br>
+            <input type="number" id="lname" name="sideB"><br><br>
+            <input type="submit" value="calculate">
+        </form>
+          <h2> {{sideA}}<sup>2</sup> + {{sideB}}<sup>2</sup> = {{hypotenuse}} </h2>
 </body>
 </html>
